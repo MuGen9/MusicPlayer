@@ -18,14 +18,14 @@ function Body({ spotify }) {
             })
             .then((res) => {
                 spotify.getMyCurrentPlayingTrack().then((r) => {
-                dispatch({
-                    type: "SET_ITEM",
-                    item: r.item,
-                });
-                dispatch({
-                    type: "SET_PLAYING",
-                    playing: true,
-                });
+                    dispatch({
+                        type: "SET_ITEM",
+                        item: r.item,
+                    });
+                    dispatch({
+                        type: "SET_PLAYING",
+                        playing: true,
+                    });
                 });
             });
     };
@@ -38,14 +38,14 @@ function Body({ spotify }) {
             })
             .then((res) => {
                 spotify.getMyCurrentPlayingTrack().then((r) => {
-                dispatch({
-                    type: "SET_ITEM",
-                    item: r.item,
-                });
-                dispatch({
-                    type: "SET_PLAYING",
-                    playing: true,
-                });
+                    dispatch({
+                        type: "SET_ITEM",
+                        item: r.item,
+                    });
+                    dispatch({
+                        type: "SET_PLAYING",
+                        playing: true,
+                    });
                 });
             });
     };
