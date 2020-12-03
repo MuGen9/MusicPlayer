@@ -24,8 +24,8 @@ function Sidebar() {
             {playlists?.items?.map((playlist, index) => (
                 <SidebarOption key={index} title={playlist.name} />
             ))}
+            
             <SidebarOption title='Hip hip' />
-            <SidebarOption title='Rock' />
             <SidebarOption title='RnB' />
         </div>
     )

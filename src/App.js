@@ -31,7 +31,7 @@ function App() {
         });
       });
 
-      spotify.getUserPlaylists('ratirl').then((playlists) => {
+      spotify.getUserPlaylists().then((playlists) => {
         console.log('Playlists: ', playlists);
         dispatch({
           type: "SET_PLAYLISTS",

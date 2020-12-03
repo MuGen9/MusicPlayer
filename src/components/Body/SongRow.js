@@ -1,9 +1,13 @@
 import React from 'react';
 import './SongRow.scss';
 
-function SongRow({ track }) {
+function SongRow({ track, playSong }) {
+    const handleClick = () => {
+        playSong(track.id)
+    }
+
     return (
-        <div className="songRow">
+        <div className="songRow" onClick={handleClick}>
             <img className="songRow__album" src={track.album.images[0].url} alt="" />
             <div className="songRow__info">
                 <h3>{track.name}</h3>
